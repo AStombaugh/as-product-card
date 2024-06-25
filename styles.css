@@ -1,0 +1,108 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --dark-blue: hsl(212, 21%, 14%);
+  --gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --p-font-size: .875rem;
+
+  --font-weight-medium: 500;
+  --font-weight-heavy: 700;
+
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-fraunces: "Fraunces", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 30rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  font-family: var(--font-family-montserrat);
+  color: var(--gray-blue);
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+main article {
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-montserrat);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  color: var(--dark-blue);
+  font-family: var(--font-family-fraunces);
+  font-weight: var(--font-weight-heavy);
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+article p {
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-family-fraunces);
+}
+
+.cart-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-heavy);
+  font-size: .875rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.cart-cta::before {
+  content: url("images/icon-cart.svg");
+  padding-right: .875rem;
+  height: .875rem;
+}
