@@ -147,7 +147,7 @@ article p {
   transition: background-color 0.1s ease-in-out;
 }
 
-@media screen and (width > 23.4375rem) {
+@media screen and (width > 40rem) {
   main {
     flex-direction: row;
   }
