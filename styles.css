@@ -58,6 +58,8 @@ header {
 }
 
 main article {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 1.5rem;
 }
@@ -164,6 +166,10 @@ article p {
     width: 100%;
     height: 100%;
     border-radius: 10px 0px 0 10px;
+  }
+
+  .cart-cta {
+    margin-top: auto;
   }
 
 }
